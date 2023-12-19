@@ -1,0 +1,42 @@
+body {
+    font-family: 'fira Sans' ,Arial , sans-serif; /*Mudando tipografia*/
+    margin: 0px;
+    color: #141414; /*o link não herda por padrão , precisando mudar diretamente */
+                        /*margin-bottom: 1000px;  por enquanto para */
+}
+
+/*zerando as margens8*/
+
+h1,h2,h3,p {
+    margin: 0px;   /*zerando as margens*/
+}
+/**comentarios
+alo
+*/
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.subtitulo {
+    font-size: 8rem;
+    line-height: 1;                 /* altura de linha*/
+    text-transform: uppercase;      /* colocando tudo em letras maiusculas*/
+    word-break: break-all;          /*  quebra do texto*/
+    max-width: 4ch;                 /* quando for bem espacada, irá delimitar a quebra em 4 caracter*/
+}
+
+@media (max-width: 800px) {
+    .subtitulo{
+        font-size: 3rem;
+        text-transform: capitalize;
+        max-width: initial !important;
+    }
+}
